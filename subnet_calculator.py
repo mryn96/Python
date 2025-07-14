@@ -11,7 +11,7 @@ def calculate_network(cidr_input):
         # Calculate default gateway (first usable IP)
         default_gateway = list(network.hosts())[0] if num_hosts > 0 else None
         # Display results
-        print(f"IP: {interface.ip}")
+        print(f"Network: {interface.ip}")
         print(f"Subnet mask: {subnet_mask}")
         print(f"Hosts number: {num_hosts}")
         print(f"GW: {default_gateway}")
